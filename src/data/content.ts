@@ -1,49 +1,49 @@
 // =====================================================================
-// 프로필 콘텐츠 — 정호님이 텍스트를 주시면 이 파일만 채우면 됩니다.
-// [수정 필요] 표시된 곳을 실제 내용으로 교체하세요.
+// 프로필 콘텐츠 — 정호님 실제 이력 반영본
 // =====================================================================
 
 export const profile = {
-  name: "김정호", // [수정 필요]
-  roleShort: "CoMindWorks 대표 · AI 강사", // [수정 필요]
-  location: "Seoul, Korea", // [수정 필요]
-  heroLine:
-    "현장에서 검증한 AI 강의와 제품으로, 실무의 속도를 바꿉니다.", // [수정 필요] — 레퍼런스: "대기업 ERP 구축의 깊이 위에, AI로 비즈니스를 다시 설계합니다."
-  quote:
-    "“미래는 이미 와 있다. 다만 고르게 퍼져 있지 않을 뿐이다.”", // [수정 필요] — 원하시면 다른 문구로 교체
+  name: "김정호",
+  roleShort: "AI 강사 · 前 네트워크 보안 엔지니어",
+  location: "Seoul, Korea",
+  heroLine: "14년 보안 엔지니어의 현장 감각으로, AI를 실무에 붙입니다.",
+  quote: "“미래는 이미 와 있다. 다만 고르게 퍼져 있지 않을 뿐이다.”",
   philosophy:
-    "AI는 이미 와 있습니다. 다만 아직, 모두의 현장에는 닿지 않았습니다.\n저는 그 거리를 좁힙니다.\n강의실이 아니라 현장에서, AI가 실제로 일하게 만드는 일을 합니다.", // [수정 필요]
+    "AI는 이미 와 있습니다. 다만 아직, 모두의 현장에는 닿지 않았습니다.\n저는 그 거리를 좁힙니다.\n보안 엔지니어로 다져온 문제 해결력으로, AI가 실제로 일하게 만드는 일을 합니다.",
   email: "kinjungho@gmail.com",
+  photo: "/profile.webp",
 };
 
 export const stats = [
-  { value: "-", label: "AI 강의 경력" }, // [수정 필요]
-  { value: "-", label: "누적 수강생" }, // [수정 필요]
-  { value: "1", label: "자체 AI 제품 (Parro)" }, // [수정 필요]
-  { value: "-", label: "기업 강의·컨설팅" }, // [수정 필요]
+  { value: "14년", label: "네트워크 보안 엔지니어 경력" },
+  { value: "4개사", label: "보안 기업 재직" },
+  { value: "1", label: "AI 강의 (재직자 대상)" },
+  { value: "우수상", label: "2026 KDT 해커톤" },
 ];
 
 export const about = {
-  role: "CoMindWorks(코마인드웍스) 대표 · AI 강사", // [수정 필요]
+  role: "AI 강사 · 前 네트워크 보안 엔지니어 · 기획자",
 };
 
 export const career = {
   current: {
-    org: "CoMindWorks", // [수정 필요]
-    title: "대표", // [수정 필요]
-    desc: "AI 강의와 AI 솔루션 제품(Parro 등)을 기획·제작·운영합니다.", // [수정 필요]
+    org: "AI 강의 · 노코드 자동화",
+    title: "AI 강사",
+    desc: "재직자를 대상으로 클로드(Claude)를 활용한 노코드 업무 자동화 강의를 진행했습니다.",
     bullets: [
-      "[수정 필요] 예: OO 기업/기관 AI 강의 진행",
-      "[수정 필요] 예: Parro 기획·개발·운영",
+      "경제과학진흥원 — 재직자 대상 '클로드 활용 노코드 업무 자동화' 강의 (2026.09.21~09.22)",
+      "2026 KDT 해커톤 우수상 수상 (2026.09.02~09.04)",
     ],
   },
   concurrent: {
-    title: "병행 활동", // [수정 필요]
-    role: "AI 컨설턴트", // [수정 필요]
-    desc: "[수정 필요] 병행하시는 활동을 설명해주세요.",
+    title: "네트워크 보안 엔지니어 · 기획자",
+    role: "14년 경력",
+    desc: "네트워크 보안 기업에서 기획자와 엔지니어로 재직하며 현장 문제 해결 경험을 쌓았습니다.",
     bullets: [
-      "[수정 필요] 사례 1",
-      "[수정 필요] 사례 2",
+      "(주)시큐아이",
+      "(주)엑스게이트",
+      "(주)퓨쳐시스템",
+      "(주)넥스지",
     ],
   },
 };
@@ -51,7 +51,7 @@ export const career = {
 export type Product = {
   id: string;
   name: string;
-  roleTag: string; // 예: "기획 · 제작"
+  roleTag: string;
   summary: string;
   tags: string[];
   detail: string;
@@ -79,29 +79,36 @@ export type Case = {
 export const cases: Case[] = [
   {
     id: "case-01",
-    title: "[수정 필요] 사례명 / 대상",
-    problem: "[수정 필요] 대상 문제",
-    approach: "[수정 필요] 접근 방식",
+    title: "경제과학진흥원 재직자 대상 강의",
+    problem: "비개발 직군 재직자들이 반복 업무를 자동화할 도구가 마땅치 않음",
+    approach: "클로드(Claude)를 활용한 노코드 업무 자동화 방법을 2일간(2026.09.21~22) 직접 실습 중심으로 교육",
   },
 ];
 
 export const awards = [
-  { year: "-", title: "[수정 필요] 수상 내역", org: "[수정 필요] 주최" },
+  {
+    year: "2026",
+    title: "KDT 해커톤 우수상",
+    org: "2026.09.02 ~ 09.04",
+  },
 ];
 
 export const certificates = {
-  ai: ["[수정 필요] AI 관련 자격증"],
-  etc: ["[수정 필요] 기타 자격증"],
+  ai: [] as string[], // [수정 필요] AI 관련 자격증이 있다면 추가
+  etc: ["CCNA"],
 };
 
 export const education = {
-  school: "[수정 필요] 학교 · 전공",
+  school: "", // 학교·전공 비공개
   trainings: [
-    { title: "[수정 필요] 교육 수료명", desc: "[수정 필요] 설명" },
+    {
+      title: "오즈코딩스쿨 수료",
+      desc: "AI 활용 개발 교육 과정 수료",
+    },
   ],
 };
 
 export const extra = {
-  books: ["[수정 필요] 저서가 있다면"],
-  activities: ["[수정 필요] 기타 활동"],
+  books: [] as string[],
+  activities: [] as string[],
 };

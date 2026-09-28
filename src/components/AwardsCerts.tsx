@@ -23,14 +23,16 @@ export default function AwardsCerts() {
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
         <SectionHeading num="06" title="자격증" />
         <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <p className="text-sm font-semibold text-accent mb-3">AI</p>
-            <ul className="space-y-2 text-sm">
-              {certificates.ai.map((c) => (
-                <li key={c}>{c}</li>
-              ))}
-            </ul>
-          </div>
+          {certificates.ai.length > 0 && (
+            <div>
+              <p className="text-sm font-semibold text-accent mb-3">AI</p>
+              <ul className="space-y-2 text-sm">
+                {certificates.ai.map((c) => (
+                  <li key={c}>{c}</li>
+                ))}
+              </ul>
+            </div>
+          )}
           <div>
             <p className="text-sm font-semibold text-accent mb-3">기타</p>
             <ul className="space-y-2 text-sm">
@@ -44,7 +46,7 @@ export default function AwardsCerts() {
 
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
         <SectionHeading num="07" title="학력 · 교육" />
-        <p className="font-medium">{education.school}</p>
+        {education.school && <p className="font-medium">{education.school}</p>}
         <ul className="mt-6 space-y-4">
           {education.trainings.map((t) => (
             <li key={t.title} className="border-l-2 border-accent/40 pl-4">
