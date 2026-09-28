@@ -55,18 +55,21 @@ export type Product = {
   summary: string;
   tags: string[];
   detail: string;
+  link: string;
 };
 
 export const products: Product[] = [
   {
     id: "parro",
     name: "Parro",
-    roleTag: "기획 · 제작 · 운영", // [수정 필요]
-    summary: "[수정 필요] Parro 한 줄 설명을 넣어주세요.",
-    tags: ["AI 솔루션"], // [수정 필요]
-    detail: "[수정 필요] Parro 상세 설명 (문제 정의 → 접근 → 결과).",
+    roleTag: "기획 · 제작 · 운영",
+    summary:
+      "한 번의 시연을 AI가 단계별 실습 가이드로 자동 변환하는 AI 실습 교육 솔루션.",
+    tags: ["AI EdTech", "실습 가이드 자동화", "강사 대시보드"],
+    detail:
+      "강사가 화면에서 한 번 시연(클릭·화면 기록)하면 Parro가 이를 AI로 단계별 카드 매뉴얼로 자동 정리합니다. 제목·설명·강조 표시를 편집기에서 다듬은 뒤 링크 하나로 공유하면, 학습자는 실제 화면 위에서 단계를 따라 반복 실습할 수 있습니다. 강사는 실시간 대시보드로 수강생별 진행 상태와 도움 요청을 확인하고, 여러 가이드를 플레이북으로 묶어 클래스·워크스페이스 단위로 운영할 수 있습니다. PDF·PPTX·Word 내보내기도 지원합니다. 기업 SOP·직무교육, 신입 온보딩, AI배움터·시니어 교육, 대학·KDT 등 실습 중심 교육 현장에 적용됩니다.",
+    link: "https://parro-guide.vercel.app/landingpage",
   },
-  // [수정 필요] 다른 제품이 있다면 여기에 같은 형식으로 추가
 ];
 
 export type Case = {
@@ -74,6 +77,7 @@ export type Case = {
   title: string;
   problem: string;
   approach: string;
+  image?: string;
 };
 
 export const cases: Case[] = [
@@ -81,7 +85,9 @@ export const cases: Case[] = [
     id: "case-01",
     title: "경제과학진흥원 재직자 대상 강의",
     problem: "비개발 직군 재직자들이 반복 업무를 자동화할 도구가 마땅치 않음",
-    approach: "클로드(Claude)를 활용한 노코드 업무 자동화 방법을 2일간(2026.09.21~22) 직접 실습 중심으로 교육",
+    approach:
+      "클로드(Claude)를 활용한 노코드 업무 자동화 방법을 2일간(2026.09.21~22) 직접 실습 중심으로 교육",
+    image: "/lecture.webp",
   },
 ];
 
@@ -89,7 +95,8 @@ export const awards = [
   {
     year: "2026",
     title: "KDT 해커톤 우수상",
-    org: "2026.09.02 ~ 09.04",
+    org: "고용노동부 장관상 · 2026.09.02 ~ 09.04",
+    image: "/award.webp",
   },
 ];
 
@@ -103,7 +110,7 @@ export const education = {
   trainings: [
     {
       title: "오즈코딩스쿨 수료",
-      desc: "AI 활용 개발 교육 과정 수료",
+      desc: "AI리더양성 부트캠프 4개월 과정 수료",
     },
   ],
 };

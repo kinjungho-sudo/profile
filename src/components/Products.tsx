@@ -18,10 +18,17 @@ export default function Products() {
         {products.map((p) => {
           const open = openId === p.id;
           return (
-            <button
+            <div
               key={p.id}
+              role="button"
+              tabIndex={0}
               onClick={() => setOpenId(open ? null : p.id)}
-              className="text-left border border-border rounded-2xl p-6 md:p-8 bg-card hover:border-accent/50 transition-colors"
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setOpenId(open ? null : p.id);
+                }
+              }}
+              className="cursor-pointer text-left border border-border rounded-2xl p-6 md:p-8 bg-card hover:border-accent/50 transition-colors"
             >
               <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-accent/10 text-accent">
                 {p.roleTag}
@@ -39,14 +46,23 @@ export default function Products() {
                 ))}
               </div>
               {open && (
-                <p className="mt-5 pt-5 border-t border-border text-sm leading-relaxed">
-                  {p.detail}
-                </p>
+                <div className="mt-5 pt-5 border-t border-border">
+                  <p className="text-sm leading-relaxed">{p.detail}</p>
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
+                  >
+                    {p.link.replace(/^https?:\/\//, "")} <span>↗</span>
+                  </a>
+                </div>
               )}
               <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent">
                 {open ? "접기" : "자세히 보기"} <span>→</span>
               </span>
-            </button>
+            </div>
           );
         })}
       </div>

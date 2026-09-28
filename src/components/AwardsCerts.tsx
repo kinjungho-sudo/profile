@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 import { awards, certificates, education, extra } from "@/data/content";
 
@@ -6,18 +7,31 @@ export default function AwardsCerts() {
     <>
       <section id="awards" className="mx-auto max-w-5xl px-6 py-16 md:py-24">
         <SectionHeading num="05" title="수상" />
-        <ul className="space-y-3">
+        <div className="space-y-6">
           {awards.map((a) => (
-            <li
+            <div
               key={a.title}
-              className="flex flex-wrap items-baseline gap-x-3 border-b border-border pb-3"
+              className="flex flex-col md:flex-row gap-5 border border-border rounded-2xl p-6 bg-card"
             >
-              <span className="text-accent font-semibold">{a.year}</span>
-              <span className="font-medium">{a.title}</span>
-              <span className="text-sm text-muted">{a.org}</span>
-            </li>
+              {a.image && (
+                <div className="relative w-full md:w-56 h-48 md:h-40 rounded-xl overflow-hidden border border-border shrink-0">
+                  <Image
+                    src={a.image}
+                    alt={a.title}
+                    fill
+                    sizes="(min-width: 768px) 14rem, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              )}
+              <div className="flex flex-col justify-center">
+                <span className="text-accent font-semibold">{a.year}</span>
+                <span className="mt-1 font-medium text-lg">{a.title}</span>
+                <span className="mt-1 text-sm text-muted">{a.org}</span>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">

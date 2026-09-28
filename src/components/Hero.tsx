@@ -31,7 +31,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-2xl overflow-hidden border border-border shrink-0 mx-auto md:mx-0">
+        <div className="relative w-40 h-56 md:w-56 md:h-80 rounded-2xl overflow-hidden border border-border shrink-0 mx-auto md:mx-0">
           <Image
             src={profile.photo}
             alt={profile.name}
