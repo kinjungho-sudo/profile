@@ -111,7 +111,7 @@ export const awards = [
 ];
 
 export const certificates = {
-  ai: [] as string[], // [수정 필요] AI 관련 자격증이 있다면 추가
+  ai: ["인공지능(AI) 전문가 1급"],
   etc: ["CCNA"],
 };
 
