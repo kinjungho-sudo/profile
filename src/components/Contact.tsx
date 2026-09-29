@@ -1,5 +1,4 @@
 import SectionHeading from "./SectionHeading";
-import { profile } from "@/data/content";
 import ContactButton from "./ContactButton";
 
 export default function Contact() {
@@ -17,7 +16,7 @@ export default function Contact() {
         </ContactButton>
       </div>
       <footer className="mt-16 text-center text-xs text-muted">
-        © {new Date().getFullYear()} {profile.name}
+        © {new Date().getFullYear()} 코마인드웍스
       </footer>
     </section>
   );

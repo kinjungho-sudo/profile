@@ -44,7 +44,7 @@ export default function AwardsCerts() {
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
-        <SectionHeading num="07" title="학력 · 교육" />
+        <SectionHeading num="07" title="AI 관련 교육 수료" />
         {education.school && <p className="font-medium">{education.school}</p>}
         <ul className="mt-6 space-y-4">
           {education.trainings.map((t) => (
