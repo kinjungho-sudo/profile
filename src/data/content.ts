@@ -113,7 +113,6 @@ export const awards = [
 
 export const certificates = {
   ai: ["인공지능(AI) 전문가 1급", "생성형AI활용능력전문가 1급"],
-  etc: ["CCNA"],
 };
 
 export const education = {

@@ -35,27 +35,12 @@ export default function AwardsCerts() {
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
-        <SectionHeading num="06" title="자격증" />
-        <div className="grid md:grid-cols-2 gap-8">
-          {certificates.ai.length > 0 && (
-            <div>
-              <p className="text-sm font-semibold text-accent mb-3">AI</p>
-              <ul className="space-y-2 text-sm">
-                {certificates.ai.map((c) => (
-                  <li key={c}>{c}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-          <div>
-            <p className="text-sm font-semibold text-accent mb-3">기타</p>
-            <ul className="space-y-2 text-sm">
-              {certificates.etc.map((c) => (
-                <li key={c}>{c}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <SectionHeading num="06" title="AI 관련 자격증" />
+        <ul className="space-y-2 text-sm">
+          {certificates.ai.map((c) => (
+            <li key={c}>{c}</li>
+          ))}
+        </ul>
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
