@@ -139,6 +139,10 @@ export const education = {
       title: "오즈코딩스쿨 수료",
       desc: "AI리더양성 부트캠프 4개월 과정 수료",
     },
+    {
+      title: "스파르타코딩클럽 수료",
+      desc: "웹/APP 개발 과정 수료",
+    },
   ],
 };
 
