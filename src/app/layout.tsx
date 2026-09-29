@@ -10,8 +10,22 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(profile.siteUrl),
   title: `${profile.name} — ${profile.roleShort}`,
   description: profile.heroLine,
+  openGraph: {
+    title: `${profile.name} — ${profile.roleShort}`,
+    description: profile.heroLine,
+    url: profile.siteUrl,
+    siteName: profile.name,
+    locale: "ko_KR",
+    type: "profile",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${profile.name} — ${profile.roleShort}`,
+    description: profile.heroLine,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -12,6 +12,7 @@ export const profile = {
     "AI는 이미 와 있습니다. 다만 아직, 모두의 현장에는 닿지 않았습니다.\n저는 그 거리를 좁힙니다.\n보안 엔지니어로 다져온 문제 해결력으로, AI가 실제로 일하게 만드는 일을 합니다.",
   email: "kinjungho@gmail.com",
   photo: "/profile.webp",
+  siteUrl: "https://profile-sigma-ten-11.vercel.app",
 };
 
 export const stats = [
