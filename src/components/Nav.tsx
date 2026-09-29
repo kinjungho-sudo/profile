@@ -1,6 +1,7 @@
 "use client";
 
 import { profile } from "@/data/content";
+import { useContactModal } from "./ContactModalProvider";
 
 const links = [
   { href: "#about", label: "소개" },
@@ -11,6 +12,8 @@ const links = [
 ];
 
 export default function Nav() {
+  const { openModal } = useContactModal();
+
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
@@ -24,12 +27,12 @@ export default function Nav() {
             </a>
           ))}
         </nav>
-        <a
-          href="#contact"
+        <button
+          onClick={openModal}
           className="text-sm font-medium px-4 py-2 rounded-full bg-accent text-[#0a0a0c] hover:opacity-90 transition-opacity"
         >
           문의하기
-        </a>
+        </button>
       </div>
     </header>
   );

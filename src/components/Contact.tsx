@@ -1,5 +1,6 @@
 import SectionHeading from "./SectionHeading";
 import { profile } from "@/data/content";
+import ContactButton from "./ContactButton";
 
 export default function Contact() {
   return (
@@ -11,12 +12,9 @@ export default function Contact() {
           <br />
           문의 내용을 남겨주시면 빠른 시간 안에 회신드리겠습니다!
         </p>
-        <a
-          href={`mailto:${profile.email}`}
-          className="mt-8 inline-flex items-center gap-2 px-8 py-3 rounded-full bg-accent text-[#0a0a0c] font-semibold hover:opacity-90 transition-opacity"
-        >
+        <ContactButton className="mt-8 inline-flex items-center gap-2 px-8 py-3 rounded-full bg-accent text-[#0a0a0c] font-semibold hover:opacity-90 transition-opacity">
           문의하기 <span>→</span>
-        </a>
+        </ContactButton>
       </div>
       <footer className="mt-16 text-center text-xs text-muted">
         © {new Date().getFullYear()} {profile.name}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { profile, stats } from "@/data/content";
+import ContactButton from "./ContactButton";
 
 export default function Hero() {
   return (
@@ -16,12 +17,9 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
-            <a
-              href="#contact"
-              className="px-6 py-3 rounded-full bg-accent text-[#0a0a0c] font-semibold text-sm hover:opacity-90 transition-opacity"
-            >
+            <ContactButton className="px-6 py-3 rounded-full bg-accent text-[#0a0a0c] font-semibold text-sm hover:opacity-90 transition-opacity">
               문의하기
-            </a>
+            </ContactButton>
             <a
               href="#products"
               className="px-6 py-3 rounded-full border border-border font-semibold text-sm hover:border-foreground/40 transition-colors"

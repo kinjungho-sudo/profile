@@ -7,9 +7,9 @@ export const profile = {
   roleShort: "AI 강사 · 前 네트워크 보안 엔지니어",
   location: "Seoul, Korea",
   heroLine: "14년 보안 엔지니어의 현장 감각으로, AI를 실무에 붙입니다.",
-  quote: "“미래는 이미 와 있다. 다만 고르게 퍼져 있지 않을 뿐이다.”",
+  quote: "“14년간 지킨 건 시스템이었고, 이제 만드는 건 가능성입니다.”",
   philosophy:
-    "AI는 이미 와 있습니다. 다만 아직, 모두의 현장에는 닿지 않았습니다.\n저는 그 거리를 좁힙니다.\n보안 엔지니어로 다져온 문제 해결력으로, AI가 실제로 일하게 만드는 일을 합니다.",
+    "보안 엔지니어로 14년, 저는 늘 '무엇이 잘못될 수 있는가'를 먼저 물었습니다.\n이제는 'AI로 무엇이 가능해지는가'를 묻습니다.\n현장에서 검증된 문제 해결력으로, AI가 실제로 일하게 만듭니다.",
   email: "kinjungho@gmail.com",
   photo: "/profile.webp",
   siteUrl: "https://profile-sigma-ten-11.vercel.app",
