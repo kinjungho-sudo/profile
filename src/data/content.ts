@@ -4,12 +4,12 @@
 
 export const profile = {
   name: "김정호",
-  roleShort: "AI 강사 · 前 네트워크 보안 엔지니어",
+  roleShort: "1인 빌더 · AI 강사 · 네트워크 보안 엔지니어/기획",
   location: "Seoul, Korea",
   heroLine: "14년 보안 엔지니어의 현장 감각으로, AI를 실무에 붙입니다.",
-  quote: "“14년간 지킨 건 시스템이었고, 이제 만드는 건 가능성입니다.”",
+  quote: "“AI 시대의 불안을, 저는 기회로 바꿉니다.”",
   philosophy:
-    "보안 엔지니어로 14년, 저는 늘 '무엇이 잘못될 수 있는가'를 먼저 물었습니다.\n이제는 'AI로 무엇이 가능해지는가'를 묻습니다.\n현장에서 검증된 문제 해결력으로, AI가 실제로 일하게 만듭니다.",
+    "단순히 AI를 잘 다루는 사람이 아니라, 당신에게 필요한 것을 AI로 직접 만들어낼 수 있도록 돕습니다.\n여러 AI 에이전트가 함께 일하게 만들어 업무 생산성을 끌어올리고,\n그렇게 확보한 시간을 더 의미 있는 곳에 쓰실 수 있도록 하겠습니다.",
   email: "kinjungho@gmail.com",
   photo: "/profile.webp",
   siteUrl: "https://profile-sigma-ten-11.vercel.app",
@@ -23,7 +23,7 @@ export const stats = [
 ];
 
 export const about = {
-  role: "AI 강사 · 前 네트워크 보안 엔지니어 · 기획자",
+  role: "1인 빌더 · AI 강사 · 네트워크 보안 엔지니어/기획",
 };
 
 export const career = {
