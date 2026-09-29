@@ -18,6 +18,8 @@ export const profile = {
 export const stats = [
   { value: "14년", label: "네트워크 보안 엔지니어 경력" },
   { value: "4개사", label: "보안 기업 재직" },
+  { value: "AI 강사", label: "전문 강사 활동 중" },
+  { value: "우수상", label: "2026 KDT 해커톤" },
 ];
 
 export const about = {
