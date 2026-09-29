@@ -79,6 +79,26 @@ export const products: Product[] = [
       "RED AI가 찬성, BLUE AI가 반대 근거를 제시하며 토론하고 사회자 AI가 팩트를 검증해 중립적 리포트를 제공합니다. 모의 면접 연습에도 활용할 수 있습니다.",
     link: "https://sparring-ai-ten.vercel.app/",
   },
+  {
+    id: "comindworks-os",
+    name: "CoMindWorks OS",
+    roleTag: "기획 · 제작 · 운영",
+    summary: "멀티 에이전트 시스템을 관리하는 1인 빌더 전용 통합 OS.",
+    tags: ["멀티 에이전트", "운영 대시보드"],
+    detail:
+      "여러 AI 에이전트를 효과적으로 관리하고, 산출물과 시스템 상태를 한눈에 볼 수 있는 1인 빌더 전용 AI 에이전트 관리 운영 시스템입니다.",
+    link: "https://comindworks-os-dashboard.vercel.app/#work",
+  },
+  {
+    id: "foal-ai",
+    name: "Foal AI",
+    roleTag: "기획 · 제작 · 운영",
+    summary: "9단계 소크라테스식 인터뷰로 창업 아이디어를 검증하는 AI 창업 멘토.",
+    tags: ["AI 창업 검증", "사업계획서 자동화"],
+    detail:
+      "AI 인터뷰로 타겟 고객과 JTBD를 발견해 아이디어를 점수로 검증하고, 이후 랜딩페이지 자동 제작 또는 예비창업패키지 양식의 사업계획서 작성으로 이어갑니다.",
+    link: "https://cofoundai2.pages.dev/",
+  },
 ];
 
 export type Case = {
