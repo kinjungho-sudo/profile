@@ -41,7 +41,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <dl className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 border-t border-border pt-10">
+      <dl className="mt-16 flex flex-wrap gap-x-12 gap-y-6 border-t border-border pt-10">
         {stats.map((s) => (
           <div key={s.label}>
             <dt className="text-3xl md:text-4xl font-black">{s.value}</dt>

@@ -18,8 +18,6 @@ export const profile = {
 export const stats = [
   { value: "14년", label: "네트워크 보안 엔지니어 경력" },
   { value: "4개사", label: "보안 기업 재직" },
-  { value: "2개", label: "자체 AI 프로덕트" },
-  { value: "3개", label: "보유 자격증" },
 ];
 
 export const about = {
